@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marso Travel Landing Page</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Volkhov:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="favicon.png?v=3" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+      <div class="container nav-container">
+        <div class="logo">Marso</div>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="#destinations">Destinations</a>
+          <a href="#hotels">Hotels</a>
+          <a href="#flights">Flights</a>
+          <a href="#book">Bookings</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="#" class="nav-login">Login</a>
+          <a href="#" class="btn btn-outline">Sign up</a>
+          <button class="lang-switch">EN <span class="chevron">⌄</span></button>
+        </div>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= HERO ================= -->
+      <section class="hero" id="home">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <p class="hero-kicker">BEST DESTINATIONS AROUND THE WORLD</p>
+            <h1 class="hero-title">
+              Travel, enjoy<br />
+              and live a new<br />
+              and full life
+            </h1>
+            <p class="hero-subtitle">
+              Built Wicket longer admire do barton vanity itself do in it.
+              Preferred to sportsmen it engrossed listening. Park gate sell they
+              west hard for the.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#book" class="btn btn-primary">Find out more</a>
+              <button class="hero-play">
+                <span class="play-icon">▶</span>
+                <span>Play Demo</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-image">
+              <!-- Replace with your main hero image -->
+              <img src="TravellerWithBag.png" alt="Traveler with backpack" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SERVICES ================= -->
+      <section class="services" id="services">
+        <div class="container">
+          <p class="section-kicker">CATEGORY</p>
+          <h2 class="section-title">We Offer Best Services</h2>
+
+          <div class="services-grid">
+            <!-- Service 1 -->
+            <article class="service-card">
+              <div class="service-icon">
+                <!-- Placeholder icon -->
+                <span><img src="Weather.png" alt=""></span>
+              </div>
+              <h3>Calculated Weather</h3>
+              <p>
+                Barton vanity itself do in it. Preferd to men it engrossed
+                listening.
+              </p>
+            </article>
+
+            <!-- Service 2 (highlighted) -->
+            <article class="service-card service-card--active">
+              <div class="service-icon">
+                <span><img src="Flight.png" alt=""></span>
+              </div>
+              <h3>Best Flights</h3>
+              <p>
+                Built Wicket longer admire do barton vanity itself do in it.
+              </p>
+            </article>
+
+            <!-- Service 3 -->
+            <article class="service-card">
+              <div class="service-icon">
+                <span><img src="Event.png" alt=""></span>
+              </div>
+              <h3>Local Events</h3>
+              <p>Engrossed listening. Park gate sell they west hard for the.</p>
+            </article>
+
+            <!-- Service 4 -->
+            <article class="service-card">
+              <div class="service-icon">
+                <span><img src="Customization.png" alt=""></span>
+              </div>
+              <h3>Customization</h3>
+              <p>
+                We deliver outsourced aviation services for military customers.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= DESTINATIONS ================= -->
+      <section class="destinations" id="destinations">
+        <div class="container">
+          <p class="section-kicker">Top Selling</p>
+          <h2 class="section-title">Top Destinations</h2>
+
+          <div class="travel-grid">
+            <div class="travel-card">
+              <div class="travel-img">
+                <img src="golden temple.jpg" alt="" />
+              </div>
+              <div class="travel-info">
+                <h3>Punjab, India</h3>
+                <div class="travel-meta">
+                  <span class="days">2 Days Trip</span>
+                  <span class="price">₹ 10000</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="travel-card">
+              <div class="travel-img">
+                <img src="Hyderabad.jpg" alt="" />
+              </div>
+              <div class="travel-info">
+                <h3>Telangana, India</h3>
+                <div class="travel-meta">
+                  <span class="days">4 Days Trip</span>
+                  <span class="price">₹ 14000</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="travel-card">
+              <div class="travel-img">
+                <img src="goa.jpeg" alt="" />
+              </div>
+              <div class="travel-info">
+                <h3>Goa, India</h3>
+                <div class="travel-meta">
+                  <span class="days">8 Days Trip</span>
+                  <span class="price">₹ 30000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= BOOKING STEPS ================= -->
+      <section class="booking" id="book">
+        <div class="container booking-container">
+          <div class="booking-text">
+            <p class="section-kicker">Easy and Fast</p>
+            <h2 class="section-title">Book Your Next Trip In 3 Easy Steps</h2>
+
+            <ul class="steps-list">
+              <li class="step-item">
+                <div class="step-icon step-icon--orange">1</div>
+                <div>
+                  <h3>Choose Destination</h3>
+                  <p>
+                    Explore our curated destinations and pick the one that excites you the most. From beaches to mountains, we have something for every traveler.
+                  </p>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-icon step-icon--blue">2</div>
+                <div>
+                  <h3>Make Payment</h3>
+                  <p>
+                    Securely pay for your trip in just a few clicks. Our platform supports multiple payment options for your convenience.
+                  </p>
+                </div>
+              </li>
+              <li class="step-item">
+                <div class="step-icon step-icon--green">3</div>
+                <div>
+                  <h3>Reach Airport on Selected Date</h3>
+                  <p>
+                    Pack your bags and head to the airport on your travel date. Your adventure begins the moment you step on board!
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <aside class="booking-card">
+            <div class="booking-thumb">
+              <img src="Kashmir.jpg" alt="Trip to Greece" />
+            </div>
+            <div class="booking-body">
+              <h3>Trip To Kashmir</h3>
+              <p>14-29 December | by Venkateshwarlu</p>
+
+              <div class="booking-tags">
+                <span>✈</span>
+                <span>🏝</span>
+                <span>🏨</span>
+              </div>
+
+              <div class="booking-footer">
+                <div class="people-going">
+                  <span class="avatar-circle">120</span>
+                  <p><strong>120 people</strong> going</p>
+                </div>
+                <div class="bookmark">
+                  <span>♥</span>
+                </div>
+              </div>
+
+              <div class="booking-status">
+                <div>
+                  <h4>Ongoing</h4>
+                  <p>Trip to Ayodhya</p>
+                </div>
+                <div class="booking-progress">
+                  <p>40% completed</p>
+                  <div class="progress-bar">
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ================= TESTIMONIALS ================= -->
+      <section class="testimonials" id="testimonials">
+        <div class="container testimonials-container">
+          <div class="testimonials-text">
+            <p class="section-kicker">TESTIMONIALS</p>
+            <h2 class="section-title">What People Say About Us.</h2>
+          </div>
+
+          <div class="testimonials-slider" id="testimonialSlider">
+            <!-- Testimonial 1 -->
+            <article class="testimonial active" data-index="0">
+              <p class="testimonial-text">
+                “Marso’s homepage instantly grabs attention with clean design and well‑arranged sections. Looking forward to seeing real bookings go live.”
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <img src="Pranay.jpg" alt="Pranay" />
+                </div>
+                <div>
+                  <h4>Pranay</h4>
+                  <p>Content Creater</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Testimonial 2 -->
+            <article class="testimonial" data-index="0">
+              <p class="testimonial-text">
+              “Marso presents destinations beautifully, making it easy to compare travel packages. The layout feels organized and user‑friendly.”
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <img src="Profile.png" alt="Anvesh" />
+                </div>
+                <div>
+                  <h4>Anvesh </h4>
+                  <p>Travel Influencer</p>
+                </div>
+              </div>
+            </article>
+
+            <div class="testimonial-controls">
+              <button class="ctrl-btn" data-direction="prev">‹</button>
+              <button class="ctrl-btn" data-direction="next">›</button>
+            </div>
+
+            <div class="testimonial-dots">
+              <button class="dot active" data-index="0"></button>
+              <button class="dot" data-index="1"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container brand-row">
+          <img class="brand" src="Axon.png" alt="Axon" />
+          <img class="brand" src="Jetstar.png" alt="Jetstar" />
+          <img class="brand" src="Expedia.png" alt="Expedia" />
+          <img src="Qantas.png" alt="Qantas" />
+          <img src="Alitalia.png" alt="Alitalia" />
+        </div>
+      </section>
+
+      <!-- ================= SUBSCRIBE ================= -->
+      <section class="subscribe" id="subscribe">
+        <div class="container subscribe-container">
+          <h2>
+            Subscribe to get information, latest news and other interesting
+            offers about Marso
+          </h2>
+
+          <form class="subscribe-form" id="subscribeForm" novalidate>
+            <div class="input-wrapper">
+              <span class="input-icon">@</span>
+              <input
+                type="email"
+                id="emailInput"
+                placeholder="Your email"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+
+          <p class="subscribe-message" id="subscribeMessage"></p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-brand">
+          <div class="logo logo-footer">Marso</div>
+          <p>Book your trip in minute, get full control for much longer.</p>
+        </div>
+
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Mobile</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <a href="#">Help/FAQ</a>
+            <a href="#">Press</a>
+            <a href="#">Affiliates</a>
+          </div>
+          <div class="footer-col">
+            <h4>More</h4>
+            <a href="#">Airlinefees</a>
+            <a href="#">Airline</a>
+            <a href="#">Low fare tips</a>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div class="social-row">
+            <a href="#" class="social-circle"><img src="Facebook.png" alt=""></a>
+            <a href="#" class="social-circle"><img src="Instagram.png" alt=""></a>
+            <a href="#" class="social-circle"><img src="X.png" alt=""></a>
+          </div>
+          <p class="app-text">Discover our app</p>
+          <div class="store-badges">
+            <span class="badge"><img src="Google Play Store.png" alt="" width="25" height="25">Google Play</span>
+            <span class="badge"><img src="Apple Store.png" alt="" width="35" height="35" class="apple" >App Store</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>All rights reserved @Marso</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
