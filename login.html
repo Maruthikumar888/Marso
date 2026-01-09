@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Marso</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+    <div class="login-page">
+        <div class="login-card">
+            <h2>Login to Marso</h2>
+
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email" />
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" />
+                <span class="toggle-password" onclick="togglePassword()">
+                    👁
+                </span>
+            </div>
+            <div class="forgot" id="forgot">
+                <a href="./forgot-password.html">forgot password</a>
+            </div>
+
+            <p id="errorMsg"></p>
+
+            <button class="btn btn-primary" onclick="handleLogin()">Login</button>
+           
+
+
+            <div class="login-footer">
+                Don’t have an account?
+                <a href="signup.html">Sign up</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div class="auth-overlay" id="forgotOverlay"></div>
+
+   
+
+
+</body>
+
+</html>
