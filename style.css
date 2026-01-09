@@ -1309,6 +1309,34 @@ body {
   border-color: #f1a501;
 }
 
+.phone-group {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.phone-group select {
+  padding: 0.85rem 0.6rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 0.85rem;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.phone-group select:focus {
+  outline: none;
+  border-color: #f1a501;
+}
+
+.phone-group input {
+  flex: 1;
+  padding: 0.85rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 0.9rem;
+}
+
+
 .toggle-password {
   position: absolute;
   right: 0.75rem;
@@ -1374,6 +1402,9 @@ body {
     font-size: 1.2rem;
   }
 
+    .phone-group select {
+    font-size: 0.9rem;
+  }
   .btn {
     font-size: 1rem;
     padding: 0.95rem;

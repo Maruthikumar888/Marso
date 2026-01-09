@@ -173,8 +173,10 @@ function handleSignup() {
 
   errorMsg.textContent = "";
 
+  const phone = document.getElementById("phone").value.trim();
+
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const phonePattern = /^[6-9]\d{9}$/;
+  const phonePattern = /^\+\d{1,4}\s\d{6,12}$/;
 
   if (!fullName || !username || !email || !phone || !password || !confirmPassword) {
     errorMsg.textContent = "All fields are required";
@@ -187,9 +189,9 @@ function handleSignup() {
   }
 
   if (!phonePattern.test(phone)) {
-    errorMsg.textContent = "Enter a valid 10-digit phone number";
-    return;
-  }
+  errorMsg.textContent = "Enter a valid mobile number";
+  return;
+}
 
   if (password.length < 6) {
     errorMsg.textContent = "Password must be at least 6 characters";
@@ -204,6 +206,23 @@ function handleSignup() {
   alert("Account created successfully!");
   window.location.href = "login.html";
 }
+
+function updateCountryCode() {
+  const countryCode = document.getElementById("countrySelect").value;
+  const phoneInput = document.getElementById("phone");
+
+  // Remove any existing country code
+  phoneInput.value = phoneInput.value.replace(/^\+\d+\s*/, "");
+
+  // Add selected country code
+  phoneInput.value = countryCode + " ";
+}
+
+// Ensure default country code is added on load
+window.addEventListener("DOMContentLoaded", () => {
+  updateCountryCode();
+});
+
 
 
 // ============ FORGOT PASSWORD LINK ============
